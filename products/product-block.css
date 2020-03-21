@@ -231,6 +231,7 @@ html{
     .responsive{
         display: flex;
         justify-content: center;
+        text-align: center;
     }
 
     .ping-pong-product-container:hover .block-cta{

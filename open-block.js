@@ -9,7 +9,5 @@ $(document).ready(function(){
         $(".burger").toggleClass("burger-active");
         $(".nav-links").toggleClass("nav-active");
     });
-    
-    map.behaviors.disable('drag');
 
 });
