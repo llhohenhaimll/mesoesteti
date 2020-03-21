@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+svg{
+    padding-left: 50px;
+    height: 20px;
+    /* width: 145px; */
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+.nav-links li{
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav-links li:last-child{
+    margin-right: 0;
+}
+
+.nav-links a:hover{
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-norm-active .nav-title {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.nav-norm-active .active .nav-title {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.product-links{
+    cursor: default;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    align-items: center;
+    height: 80px;
+    border-top: 1px solid #4a4a4a;
+    padding: 0 70px;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+.product-links li{
+    text-align: center;
+    width: 100%;
+}
+
+.prod-nav-active{
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.active{
+    display: flex;
+    height: 80px;
+    opacity: 1;
+}
+
+.burger{
+    display: none;
+    padding-right: 50px;
+}
+
+.burger div{
+    height: 2px;
+    width: 30px;
+    background-color: #4a4a4a;
+    margin: 7px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1240px){
+
+    .nav-links{
+        left: 0;
+        top: 80px;
+        width: 100%;
+        position: absolute;
+        height: 0;
+        text-align: center;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s ease;
+        overflow: scroll;
+    }
+
+    .nav-active{
+        height: calc(100vh - 80px);
+    }
+
+    .nav-links a:hover{
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-links li{
+        opacity: 1;
+        margin: 0;
+        padding: 15px 0;
+    }
+
+    .product-links{
+        position: unset;
+        flex-direction: column;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        width: 60vw;
+        border-bottom: 1px solid #4a4a4a;
+    }
+
+    .active{
+        margin-top: 30px;
+        position: unset;
+        flex-direction: column;
+        height: auto;
+        /* width: 100%; */
+        transition: 0.5s ease;
+    }
+
+
+
+    .burger{
+        display: block;
+    }
+}
+
+
+
+.nav-active{
+    opacity: 1;
+}
+
+.burger-active{
+    height: auto;
+}
+
+.burger-active .line1{
+    transform: rotate(-45deg) translate(-2px,5px);
+}
+
+.burger-active .line2{
+    transform: rotate(45deg) translate(-2px,-5px);
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #4a4a4a;
+    margin-top: 120px;
+}
+
+.footer .logo,
+.footer-cont{
+    width: 33.333%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer svg{
+    padding: 0;
+    fill: #fff;
+}
+.logo h4{
+    font-size: 11px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.footer h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer a{
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.footer a:last-child{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .logo,
+    .footer-cont{
+        width: 100%;
+    }
+
+    .footer-cont{
+        margin-top: 30px;
+    }
+}

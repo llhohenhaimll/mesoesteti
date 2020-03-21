@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    min-width: auto;
+    padding: 120px 50px;
+    margin-top: 80px;
+}
+
+.info{
+    width: 50%;
+}
+
+.info h1{
+    font-size: calc(30px + 10 * ((100vw - 480px) / 1440));
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.info p{
+    margin: 60px 0 0;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: lighter;
+    width: 80%;
+}
+
+.contact-info{
+    /* background-color: violet; */
+    margin-top: 40px;
+}
+
+.contac-list{
+    list-style: none;
+    width: 80%;
+    height: 100%;
+}
+
+.contac-list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0 0;
+    font-size: calc(20px + 2 * ((100vw - 480px) / 1440));
+    line-height: 1.4;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.contac-list li img{
+    height: 15px;
+}
+
+.contac-list li p{
+    margin: 0;
+    margin-left: 25px;
+}
+
+.form{
+    margin-top: 80px;
+    width: 50%;
+}
+
+input,
+textarea {
+    font-weight: lighter;
+    border: 0;
+    border-bottom: 1px solid #4a4a4a;
+    font-size: 15px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    height: 120px;
+}
+
+button{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #4a4a4a;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    padding: 13px 20px;
+    color: #4a4a4a;
+    transition: all .6s ease-in-out;
+}
+
+button:hover{
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+@media screen and (max-width: 1240px){
+    .contacts{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info,
+    .form{
+        text-align: center;
+        width: 100%;
+    }
+
+    .info p{
+        width: 100%;
+    }
+
+    .contac-list{
+        width: 100%;
+    }
+
+    .contac-list li{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contac-list li p{
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .form{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    input,
+    textarea,
+    button{
+        margin-top: 40px;
+    }
+    .contac-list li{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contacts{
+        padding: 60px 50px 120px;
+    }
+    .contac-list li{
+        /* align-items: flex-start; */
+    }
+
+    .contac-list li img{
+        height: 20px;
+    }
+
+    input,
+    textarea{
+        width: 100%;
+    }
+}

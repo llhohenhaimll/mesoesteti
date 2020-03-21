@@ -1,0 +1,11 @@
+.section-title{
+    margin: 120px 0 60px;
+    text-align: left;
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 1240px){
+    .section-title{
+        text-align: center;
+    }
+}

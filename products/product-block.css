@@ -1,0 +1,243 @@
+/* main code */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* page calim */
+
+.page-claim {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    background-size: cover;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    padding: 120px 50px;
+    margin-top: 80px;
+}
+
+.claim{
+    width: 300px;
+}
+
+.c-h1{
+    font-size: calc(30px + 10 * ((100vw - 480px) / 1440));
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.c-p{
+    margin: 2.5rem 0 0;
+    font-size: calc(20px + 2 * ((100vw - 480px) / 1440));
+    line-height: 1.4;
+    font-weight: lighter;
+}
+
+/* product */
+
+.ping-pong-product{
+    background-color: #f3f3f3;
+    padding: 40px 50px;
+    height: 100%;
+}
+
+.even {
+    background-color: #fff;
+}
+
+.even .ping-pong-product-container{
+    flex-direction: row-reverse;
+}
+
+.even .product-content{
+    padding: 20px ;
+}
+
+.ping-pong-product-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5rem;
+    height: 100%;
+}
+
+.ping-pong-product-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.ping-pong-product-container:hover .block-cta{
+    background-color: #4a4a4a;
+}
+
+.ping-pong-product-container:hover span{
+    color: #f3f3f3;
+}
+
+.product-content{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+}
+
+.c-h2{
+    font-size: calc(30px + 10 * ((100vw - 480px) / 1440));
+    font-weight: lighter;
+}
+
+.c-h5{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: lighter;
+    margin-top: 1.25rem;
+}
+
+.product-content p{
+    font-weight: lighter;
+    line-height: 1.6;
+    margin: 40px 0 10px 0;
+    font-size: 15px;
+    width: 100%;
+}
+
+.cta{
+    margin-top: 2.5rem;
+    align-items: center;
+}
+
+.block-cta{
+    display: inline-flex;
+    padding: 13px 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #4a4a4a;
+    letter-spacing: 2px;
+    transition: all 0.7s ease-in;
+    line-height: 1.4;
+}
+
+.responsive{
+    display: none;
+}
+
+.product-img{
+    /* background-color: sandybrown; */
+    width: 50%;
+}
+
+.product-img img{
+    width: 100%;
+} 
+
+@media screen and (max-width: 1024px){
+    .page-claim{
+        height: 364px;
+        padding: 6.25rem 1.25rem;
+    }
+
+    .ping-pong-product{
+        padding: 20px 25px;
+    }
+    .ping-pong-product-container{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .page-claim{
+        height: 271px;
+        padding: 80px 20px;
+    }
+
+    .claim{
+        width: 100%;
+        text-align: center;
+    }
+
+    .c-p{
+        margin: 20px 40px;
+    }
+
+    .ping-pong-product{
+        height: 100%;
+        padding: 0;
+    }
+
+    .ping-pong-product-container{
+        flex-direction: column-reverse;
+        padding: 40px 0 60px;
+    }
+
+    .even .ping-pong-product-container{
+        flex-direction: column-reverse;
+    }
+
+    .even .product-content{
+        width: 60%;
+        text-align: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    .product-content{
+        width: 60%;
+        text-align: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    .product-content p{
+        width: 100%;
+    }
+
+    .c-h2{
+        padding: 0 0 20px;
+    }
+
+    .c-h2{
+        padding-top: 20px;
+    }
+
+    .product-img{
+        width: 100%;
+    }
+
+    .product-img img{
+        padding: 40px 60px 0;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .responsive{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ping-pong-product-container:hover .block-cta{
+        background-color: transparent;
+    }
+    
+    .ping-pong-product-container:hover span{
+        color: #4a4a4a;
+    }
+}
