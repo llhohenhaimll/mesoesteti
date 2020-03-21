@@ -59,6 +59,7 @@ html{
     letter-spacing: 2;
     font-weight: lighter;
     font-size: 11px;
+    padding: 0 50px;
 }
 
 .description {
@@ -180,6 +181,8 @@ html{
     text-align: center;
     font-size: 30px;
     font-weight: lighter;
+    padding: 0 50px;
+    line-height: 1.3;
 }
 
 .line-title .c-h5{
