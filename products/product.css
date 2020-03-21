@@ -214,7 +214,7 @@ html{
 }
 
 .information{
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     min-height: 80px;
     transform: translateY(0);
