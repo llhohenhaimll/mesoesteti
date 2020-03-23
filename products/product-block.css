@@ -109,14 +109,14 @@ html{
     font-size: 11px;
     font-weight: lighter;
     margin-top: 1.25rem;
-    line-height: 1;
+    line-height: 1.7;
     /* padding: 0 50px; */
 }
 
 .product-content p{
     font-weight: lighter;
     line-height: 1.6;
-    margin: 40px 0 10px 0;
+    margin: 20px 0 10px 0;
     font-size: 15px;
     width: 100%;
 }

@@ -54,12 +54,12 @@ html{
 }
 
 .c-h5{
-    margin-top: 10px;
+    margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 2;
     font-weight: lighter;
     font-size: 11px;
-    line-height: 1;
+    line-height: 1.7;
 }
 
 .description {
@@ -319,7 +319,7 @@ html{
     .description{
         max-width: 85%;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .container{
@@ -375,13 +375,16 @@ html{
         width: 100%;
         padding: 0;
         text-align: center;
-        padding-bottom: 40px;
+        padding: 40px 0;
     }
 
     .description{
         max-width: 85%;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 20px;
+    }
+    .c-h5{
+        margin-top: 20px;
     }
 
     .product{
@@ -407,5 +410,11 @@ html{
 
     .container{
         padding: 20px 20px 80px;
+    }
+    .description{
+        margin-top: 30px;
+    }
+    .c-h5{
+        margin-top: 30px;
     }
 }

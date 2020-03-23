@@ -316,6 +316,20 @@ html{
     }
 }
 
+@media screen and (max-width: 768px){
+    .filter-list{
+        flex-direction: column;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .filter-item{
+        margin: 10px 0;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
 @media screen and (max-width: 425px){
     .question-wrap{
         padding: 0 20px;

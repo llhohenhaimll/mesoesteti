@@ -56,6 +56,7 @@ html{
 
 .filter-svg path{
     transition: all .3s ease;
+    fill: #4a4a4a;
 }
 
 .filter-svg-active path:first-child {
@@ -315,6 +316,22 @@ html{
         top: 200px;
     }
 }
+
+
+@media screen and (max-width: 768px){
+    .filter-list{
+        flex-direction: column;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .filter-item{
+        margin: 10px 0;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
 
 @media screen and (max-width: 425px){
     .question-wrap{

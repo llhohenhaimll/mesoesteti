@@ -53,17 +53,16 @@ html{
 }
 
 .c-h5{
-    margin-top: 10px;
+    margin-top: 20px;
     line-height: 1.7;
     text-transform: uppercase;
     letter-spacing: 2;
     font-weight: lighter;
     font-size: 11px;
-    padding: 0 50px;
 }
 
 .description {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 204px;
     font-weight: lighter;
     font-size: 15px;
@@ -369,13 +368,13 @@ html{
         width: 100%;
         padding: 0;
         text-align: center;
-        padding-bottom: 40px;
+        padding: 40px 0;
     }
 
     .description{
         max-width: 85%;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .product{

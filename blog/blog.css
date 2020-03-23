@@ -185,7 +185,10 @@ html{
     opacity: 1;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
+    .blog-list{
+        padding-top: 20px;
+    }
     .post{
         width: 100%;
     }
@@ -194,12 +197,16 @@ html{
         text-align: center;
         line-height: 1.5;
     }
+
+    .post:hover .cta{
+        bottom: -2.625rem;
+    }
 }
 
 @media screen and (max-width: 600px){
     .blog-item{
         width: 100%;
-        margin: 20px 40px 0;
+        margin: 20px 50px 0;
     }
 
     .blog-item:first-child{
