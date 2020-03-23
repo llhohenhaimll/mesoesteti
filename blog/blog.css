@@ -198,8 +198,8 @@ html{
         line-height: 1.5;
     }
 
-    .post:hover .cta{
-        bottom: -2.625rem;
+    .cta{
+        display: none;
     }
 }
 
