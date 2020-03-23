@@ -199,7 +199,7 @@ html{
     }
 
     .cta{
-        display: none;
+        bottom: 3.75rem;
     }
 }
 
