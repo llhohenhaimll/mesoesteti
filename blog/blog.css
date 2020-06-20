@@ -160,11 +160,13 @@ html{
     display: flex;
     bottom: -2.625rem;
     transition: all .6s ease-in-out;
+    opacity: 0;
 }
 
 .post:hover .cta{
     bottom: 3.75rem;
     transition: all .6s ease-in-out;
+    opacity: unset;
 }
 
 .btn{
@@ -200,6 +202,7 @@ html{
 
     .cta{
         bottom: 3.75rem;
+        opacity: 1;
     }
 }
 

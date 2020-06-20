@@ -264,6 +264,7 @@ html{
     position: absolute;
     transition: all .6s ease-in-out;
     width: 100%;
+    opacity: 0;
 }
 
 .btn{
@@ -286,6 +287,7 @@ html{
 
 .product:hover .cta{
     top: 0;
+    opacity: unset;
 }
 
 .product:hover .main-info,
